@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Flower Recognition</title>
+</head>
+
+<body id="page-top">
+  <form action="http://127.0.0.1:8000/recognize" method="POST" enctype="multipart/form-data">
+
+    <h1>Flower image</h1>
+    <div class="well" data-bind="fileDrag: fileData, enable: onClear">
+      <input type="file" name="imgFilename" data-bind="fileInput: fileData" accept="image/*">
+    </div>
+    </br>
+    <input type="submit" value="Recognize" />
+  </form>
+
+</body>
+
+</html>
